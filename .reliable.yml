@@ -1,1 +1,14 @@
-webdriver_server: true
+language: node_js
+
+before_install:
+  - nvm ls
+
+before_script: nvm ls
+
+script: make test-ios
+
+after_script: npm -v
+
+after_failure: npm -v
+
+after_success:

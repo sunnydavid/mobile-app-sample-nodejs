@@ -5,7 +5,7 @@ before_install:
 
 before_script: nvm ls
 
-script: make test-ios
+script: make test-android
 
 after_script: npm -v
 

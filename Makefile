@@ -16,9 +16,8 @@ test-android: install
 	macaca doctor
 	platform=android macaca run --verbose -d ./macaca-test/mobile-app-sample.test.js
 travis-android: install
-	npm install macaca-android --save-dev
-	${npm_bin}/macaca doctor
-	platform=android ${npm_bin}/macaca run --verbose -d ./macaca-test/mobile-app-sample.test.js
+	macaca doctor
+	platform=android macaca run --verbose -d ./macaca-test/mobile-app-sample.test.js
 travis-ios: install
 	npm install macaca-ios --save-dev
 	${npm_bin}/macaca doctor
